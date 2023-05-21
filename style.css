@@ -1,0 +1,104 @@
+.move_element {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: rainbow 0.5s linear both;
+  transition: all linear 0.4s;
+}
+@keyframes rainbow {
+  0% {
+  }
+  10% {
+    background-image: linear-gradient(
+      to right top,
+      #fb5d1e,
+      #fb701d,
+      #fa811f,
+      #f99125,
+      #f8a02e
+    );
+  }
+  20% {
+    background-image: linear-gradient(
+      to right top,
+      #3c3cf6,
+      #008eff,
+      #00bcff,
+      #00dfbb,
+      #2ef85a
+    );
+  }
+  30% {
+    background-image: linear-gradient(
+      to right top,
+      #d16ba5,
+      #c777b9,
+      #ba83ca,
+      #aa8fd8,
+      #9a9ae1,
+      #8aa7ec,
+      #79b3f4,
+      #69bff8,
+      #52cffe,
+      #41dfff,
+      #46eefa,
+      #5ffbf1
+    );
+  }
+  50% {
+    background-image: linear-gradient(
+      to left bottom,
+      #ff1251,
+      #fa5b2d,
+      #e98707,
+      #d1aa0d,
+      #b3c73e,
+      #b2cd4c,
+      #b1d25a,
+      #b0d867,
+      #c9cc58,
+      #debf53,
+      #eeb155,
+      #fba35f
+    );
+  }
+  70% {
+    background-image: linear-gradient(
+      to right top,
+      #01d3ff,
+      #00d4cc,
+      #4fcc7e,
+      #a4b930,
+      #eb9612
+    );
+  }
+  100% {
+    background-image: linear-gradient(
+      to right top,
+      #d16ba5,
+      #c777b9,
+      #ba83ca,
+      #aa8fd8,
+      #9a9ae1,
+      #8aa7ec,
+      #79b3f4,
+      #69bff8,
+      #52cffe,
+      #41dfff,
+      #46eefa,
+      #5ffbf1
+    );
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+.move_element_parent {
+  transition: all linear 0.4s;
+}
+body {
+  overflow-x: hidden;
+  background-color: black;
+}
